@@ -7,9 +7,17 @@
     Shell.FlyoutBehavior="Disabled"
     Title="MosqueraAnthonny_ExamenProgreso2">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+  
+
+    <TabBar>
+        <ShellContent Title="Recargas" Icon="inicio.png"
+                      ContentTemplate="{DataTemplate local:InicioPage}" />
+        <ShellContent Title="Acerca de" Icon="icon_about.png"
+                ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Notas" Icon="icon_notes.png"
+                      ContentTemplate="{DataTemplate local:NotasPage}" />
+        <ShellContent Title="VerNotas" Icon="view.png"
+                      ContentTemplate="{DataTemplate local:VerNotasPage}" />
+    </TabBar>
 
 </Shell>
